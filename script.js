@@ -2,6 +2,7 @@ const { createApp } = Vue;
 const app = createApp({
     data() {
         return {
+            searchName: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -166,6 +167,18 @@ const app = createApp({
                 }
             ],
             // fine array con info dei profili + messaggi
+            computed: {
+                filteredContacts() {
+                    return this.contacts.filter(contact =>
+                        contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+                    );
+                }
+            },
+            methods: {
+                handleInput() {
+
+                }
+            }
         }
     }
 });
