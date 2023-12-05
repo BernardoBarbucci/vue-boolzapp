@@ -7,8 +7,50 @@
 main{
     height: 100vh;
     width: 100vw;
+    padding: 2rem 5rem;
     background: linear-gradient(180deg, #009688,  #d9dbd3);
 }
-.container-small{
+.container{
+    max-height: 900px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
 
+    border: black solid 2px;
+}
+.aside{
+    width: 35%;
+    height: 100%;
+    border: red solid 2px;
+}
+.chat-box{
+    width: 65%;
+    height: 100%;
+    border: white 2px solid;
+}
+#profile{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eaeaea;
+}
+.user-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-profile img{
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.user-settings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b1b1b1;
+}
+.user-settings i{
+    margin-right: 10px;
 }
