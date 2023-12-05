@@ -54,3 +54,36 @@ main{
 .user-settings i{
     margin-right: 10px;
 }
+#notifications{
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8edafc;
+    padding-left: 10px;
+}
+#notifications i{
+    background-color:white;
+    color: #8edafc;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 36px;
+    display: inline-block;
+    padding-left: 8px;
+}
+.not-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.not-text h3{
+    font-size: 11px;
+    font-weight: bold;
+}
+.not-text p{
+    text-decoration: underline;
+    font-size: 11px;
+}
