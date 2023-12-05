@@ -88,3 +88,30 @@ main{
     text-decoration: underline;
     font-size: 11px;
 }
+#searchbar{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+}
+.searchbar i{
+    width: 2.5rem;
+    height: 30px;
+    background-color: #ffffff;
+    line-height:30px;
+    text-align: center;
+    color: rgb(218, 218, 218);
+    border-radius: 5px;
+}
+.searchbar input{
+    height: 30px;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    font-size: .7rem;
+    color: rgb(218, 218, 218);
+}
