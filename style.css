@@ -117,10 +117,34 @@ main{
 }
 #contacts-list{
     height: 46rem;
-    background-color: darkgrey;
+    background-color: white;
 }
 .user-chats{
     list-style: none;
-    height: 45px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     border: solid 2px green;
+}
+.user-chats:hover{
+    background-color: #e9ebeb;
+}
+.user-chats img{
+    height: 100%;
+    border-radius: 50%;
+}
+.user-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.user-chats h1{
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.user-chats p{
+    font-size: .5rem;
+    color: grey;
 }
