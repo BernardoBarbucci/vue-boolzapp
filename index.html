@@ -44,6 +44,7 @@
                     <ul id="contacts-list">
                         <li v-for="(contact, index) in filteredContacts" :key="index" class="user-chats">
                             <img :src="contact.avatar" alt="contact.name">
+                            <p>{{ contact.name }}</p>
                         </li>
                     </ul>
                 </div>

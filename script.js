@@ -170,6 +170,7 @@ const app = createApp({
         }
     },
     computed: {
+// strategia 1
         // filteredContacts() {
         //     if (!this.searchName.trim()) {
         //         return this.contacts;
@@ -178,6 +179,7 @@ const app = createApp({
         //         contact.name.toLowerCase().includes(this.searchName.toLowerCase())
         //     );
         // }
+// strategia 2
         filteredContacts() {
             if (!this.searchName.trim()) {
                 return this.contacts;
