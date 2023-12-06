@@ -171,8 +171,11 @@ const app = createApp({
     },
     computed: {
         filteredContacts() {
-            return this.contacts.filter(contact =>
-                contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+            if (!this.searchName.trim()) {
+                return this.contacts;
+            }
+            return this.contacts.filter(contacts => 
+                contact.name,toLowerCase().includes())
             );
         }
     },
