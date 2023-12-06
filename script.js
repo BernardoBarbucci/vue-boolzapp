@@ -174,13 +174,13 @@ const app = createApp({
             if (!this.searchName.trim()) {
                 return this.contacts;
             }
-            return this.contacts.filter(contacts => 
-                contact.name,toLowerCase().includes())
+            return this.contacts.filter(contact => 
+                contact.name,toLowerCase().includes(this.searchName.toLowerCase())
             );
         }
     },
     methods: {
-        handleInput() {
+        handleContact() {
 
         }
     }

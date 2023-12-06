@@ -39,7 +39,7 @@
                     </div>
                     <div id="searchbar" class="searchbar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input v-model="searchName" type="text" placeholder="Cerca o inizia una nuova chat" @input="handleInput"> 
+                        <input v-model="searchName" type="text" placeholder="Cerca o inizia una nuova chat" @input="handleContact"> 
                     </div>
                     <ul id="contacts-list">
                         <li v-for="(contact, index) in filteredContacts" :key="index" class="user-chats">
@@ -51,7 +51,7 @@
                     
                 </div>
             </section>
-        </main>
+        </main> 
     </div>
 
     <!-- js + vue link -->
