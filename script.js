@@ -6,7 +6,7 @@ const app = createApp({
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: './img/avatar_1.jng',
+                    avatar: './img/avatar_1.jpg',
                     visible: true,
                     messages: [
                         {
@@ -170,18 +170,29 @@ const app = createApp({
         }
     },
     computed: {
+        // filteredContacts() {
+        //     if (!this.searchName.trim()) {
+        //         return this.contacts;
+        //     }
+        //     return this.contacts.filter(contact => 
+        //         contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+        //     );
+        // }
         filteredContacts() {
             if (!this.searchName.trim()) {
                 return this.contacts;
             }
             return this.contacts.filter(contact => 
-                contact.name,toLowerCase().includes(this.searchName.toLowerCase())
+                contact.name.toLowerCase().includes(this.searchName.toLowerCase())
             );
         }
-    },
-    methods: {
-        handleContact() {
-
-        }
     }
+    // methods: {
+    //     handleContact() {
+
+    //     }
+    // }
 });
+
+
+
