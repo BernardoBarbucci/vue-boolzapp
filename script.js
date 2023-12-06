@@ -7,6 +7,7 @@ const app = createApp({
                 {
                     name: 'Michele',
                     avatar: './img/avatar_1.jpg',
+                    lastMessage: '12:00',
                     visible: true,
                     messages: [
                         {
@@ -29,6 +30,7 @@ const app = createApp({
                 {
                     name: 'Fabio',
                     avatar: './img/avatar_2.jpg',
+                    lastMessage: '14:37',
                     visible: true,
                     messages: [
                         {
@@ -51,6 +53,7 @@ const app = createApp({
                 {
                     name: 'Samuele',
                     avatar: './img/avatar_3.jpg',
+                    lastMessage: '18:12',
                     visible: true,
                     messages: [
                         {
@@ -73,6 +76,7 @@ const app = createApp({
                 {
                     name: 'Alessandro B.',
                     avatar: './img/avatar_4.jpg',
+                    lastMessage: '23:59',
                     visible: true,
                     messages: [
                         {
@@ -90,6 +94,7 @@ const app = createApp({
                 {
                     name: 'Alessandro L.',
                     avatar: './img/avatar_5.jpg',
+                    lastMessage: '04:20',
                     visible: true,
                     messages: [
                         {
@@ -107,6 +112,7 @@ const app = createApp({
                 {
                     name: 'Claudia',
                     avatar: './img/avatar_6.jpg',
+                    lastMessage: '08:08',
                     visible: true,
                     messages: [
                         {
@@ -129,6 +135,7 @@ const app = createApp({
                 {
                     name: 'Federico',
                     avatar: './img/avatar_7.jpg',
+                    lastMessage: '11:41',
                     visible: true,
                     messages: [
                         {
@@ -146,6 +153,7 @@ const app = createApp({
                 {
                     name: 'Davide',
                     avatar: './img/avatar_8.jpg',
+                    lastMessage: '12:13',
                     visible: true,
                     messages: [
                         {

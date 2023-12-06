@@ -125,14 +125,17 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: solid 2px green;
+    border-top: solid 1px #f7f7f7;
+    border-bottom: solid 1px #f7f7f7;
 }
 .user-chats:hover{
     background-color: #e9ebeb;
 }
 .user-chats img{
-    height: 100%;
+    height: 3rem;
     border-radius: 50%;
+    align-self: center;
+    padding-left: .4rem;
 }
 .user-name{
     display: flex;
@@ -141,10 +144,15 @@ main{
     padding-left: 10px;
 }
 .user-chats h1{
-    font-size: 1rem;
+    font-size: .85rem;
     margin-bottom: 4px;
 }
 .user-chats p{
-    font-size: .5rem;
+    font-size: .55rem;
     color: grey;
+}
+.last-message{
+    margin-left: auto;
+    padding-right: .3rem;
+    padding-top: .3rem;
 }
