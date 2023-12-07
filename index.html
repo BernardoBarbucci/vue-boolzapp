@@ -19,7 +19,7 @@
         <main>
             <section class="container">
                 <div class="aside">
-                    <div id="profile">
+                    <div class="profile">
                         <div class="user-profile">
                             <img src="./img/avatar_io.jpg" alt="user profile pic">
                             <p>Sofia</p>
@@ -53,6 +53,20 @@
                     </ul>
                 </div>
                 <div class="chat-box">
+                    <div class="profile">
+                        <div v-for="(contact, index) in filteredContacts" :key="index" class="user-profile">
+                            <img :src="{{ contact.avatar }}" alt="user profile pic">
+                            <div class="user-name">
+                                <h1>{{ contact.name }}</h1>
+                                <p>Ultimo accesso oggi alle {{ contact.lastMessage }}</p>
+                            </div>
+                        </div>
+                        <div class="user-settings">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main> 

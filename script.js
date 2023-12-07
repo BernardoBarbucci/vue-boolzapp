@@ -175,19 +175,10 @@ const app = createApp({
                 }
             ],
             // fine array con info dei profili + messaggi
+            contactClicked: null,
         }
     },
     computed: {
-// strategia 1
-        // filteredContacts() {
-        //     if (!this.searchName.trim()) {
-        //         return this.contacts;
-        //     }
-        //     return this.contacts.filter(contact => 
-        //         contact.name.toLowerCase().includes(this.searchName.toLowerCase())
-        //     );
-        // }
-// strategia 2
         filteredContacts() {
             if (!this.searchName.trim()) {
                 return this.contacts;
@@ -196,12 +187,12 @@ const app = createApp({
                 contact.name.toLowerCase().includes(this.searchName.toLowerCase())
             );
         }
+    },
+    methods: {
+        contactChat(contact) {
+            this.contactClicked = contact;
+        }
     }
-    // methods: {
-    //     handleContact() {
-
-    //     }
-    // }
 }).mount('#app');
 
 

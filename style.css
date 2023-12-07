@@ -21,14 +21,13 @@ main{
 .aside{
     width: 35%;
     height: 100%;
-    border: red solid 2px;
+    border-right: #b1b1b1 solid 2px;
 }
 .chat-box{
     width: 65%;
     height: 100%;
-    border: white 2px solid;
 }
-#profile{
+.profile{
     height: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +117,7 @@ main{
 #contacts-list{
     height: 46rem;
     background-color: white;
+    overflow-y: auto;
 }
 .user-chats{
     list-style: none;
@@ -155,4 +155,7 @@ main{
     margin-left: auto;
     padding-right: .3rem;
     padding-top: .3rem;
+}
+.chat-box{
+    background-color: #eaeaea;
 }
