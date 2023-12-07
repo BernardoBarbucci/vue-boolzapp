@@ -159,3 +159,11 @@ main{
 .chat-box{
     background-color: #eaeaea;
 }
+.chat-box .profile .user-name h1{
+    font-size: .85rem;
+    margin-bottom: 4px;
+}
+.chat-box .profile .user-name p{
+    font-size: .55rem;
+    color: grey;
+}
