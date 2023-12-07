@@ -189,8 +189,8 @@ const app = createApp({
         }
     },
     methods: {
-        contactChat(contact) {
-            this.contactClicked = contact;
+        contactChat(index) {
+            this.contactClicked = this.filteredContacts[index];
         }
     }
 }).mount('#app');
