@@ -176,6 +176,10 @@ const app = createApp({
             ],
             // fine array con info dei profili + messaggi
             contactClicked: null,
+            // tiene traccia del contatto selezionato, aggiornata se clicked 
+            
+            writeMessage: '',
+            tiene traccia del testo inserito dalll'utente nell'input del messaggio
         }
     },
     computed: {
