@@ -39,7 +39,7 @@
                     </div>
                     <div id="searchbar" class="searchbar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" placeholder="Cerca o inizia una nuova chat"> 
+                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" @click="contactClicked(contact)" placeholder="Cerca o inizia una nuova chat"> 
                     </div>
                     <ul id="contacts-list">
                         <li v-for="(contact, index) in filteredContacts" :key="index" class="user-chats">
@@ -54,11 +54,11 @@
                 </div>
                 <div class="chat-box">
                     <div class="profile">
-                        <div v-for="(contact, index) in filteredContacts" :key="index" class="user-profile">
-                            <img :src="{{ contact.avatar }}" alt="user profile pic">
+                        <div v-if="contactClicked" class="user-profile">
+                            <img :src="{{ contactClicked.avatar }}" alt="user profile pic">
                             <div class="user-name">
-                                <h1>{{ contact.name }}</h1>
-                                <p>Ultimo accesso oggi alle {{ contact.lastMessage }}</p>
+                                <h1>{{ contactClicked.name }}</h1>
+                                <p>Ultimo accesso oggi alle {{ contactClicked.lastMessage }}</p>
                             </div>
                         </div>
                         <div class="user-settings">
