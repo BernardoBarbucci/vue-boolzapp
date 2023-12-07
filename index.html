@@ -39,10 +39,10 @@
                     </div>
                     <div id="searchbar" class="searchbar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" @input="contactChat(contact)" placeholder="Cerca o inizia una nuova chat"> 
+                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" @click="contactChat(contact)" placeholder="Cerca o inizia una nuova chat"> 
                     </div>
                     <ul id="contacts-list">
-                        <li v-for="(contact, index) in filteredContacts" :key="index" class="user-chats">
+                        <li v-for="(contact, index) in filteredContacts" :key="index" @click="() => contactChat(index)" class="user-chats">
                             <img :src="contact.avatar" alt="contact.name">
                             <div class="user-name">
                                 <h1>{{ contact.name }}</h1>
