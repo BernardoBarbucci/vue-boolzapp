@@ -21,6 +21,7 @@ main{
 .aside{
     width: 35%;
     max-width: 500px;
+    min-width: 268px;
     height: 100%;
     border-right: #b1b1b1 solid 2px;
 }
@@ -159,6 +160,7 @@ main{
 }
 .chat-box{
     background-color: #eaeaea;
+    min-width: 288px;
 }
 .chat-box .profile .user-name h1{
     font-size: .85rem;
@@ -177,7 +179,20 @@ main{
 .insert-message{
     height: 3rem;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3eeea;
+    padding: 0 5px;
+}
+.insert-message i{
+    color: #6b7377;
+    font-size: 1.2rem;
 }
 #write-Message{
-    
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }
