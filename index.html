@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzap</title>
     <link rel="stylesheet" href="./style.css">
@@ -39,7 +40,8 @@
                     </div>
                     <div id="searchbar" class="searchbar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" @click="contactChat(index)" placeholder="Cerca o inizia una nuova chat"> 
+                        <input v-model="searchName" type="text" id="searchContact" name="searchContact" placeholder="Cerca o inizia una nuova chat">
+                        <!-- <input v-model="searchName" type="text" id="searchContact" name="searchContact" @click="contactChat(index)" placeholder="Cerca o inizia una nuova chat">  -->
                     </div>
                     <ul id="contacts-list">
                         <li v-for="(contact, index) in filteredContacts" :key="index" @click="() => contactChat(index)" class="user-chats">
@@ -69,13 +71,14 @@
                     </div>
                     <div id="chat">
                         <div class="chat-container">
-                            <div v-for="(message, index) in " class="received-mes">
-
+                            <div v-for="(message, index) in contactClicked.messages" :key="index" class="received-mes" v-if="message && message.status === 'received'">
+                                {{ message.message }}
                             </div>
-                            <div class="sent-mes">
-
+                            <div v-for="(message, index) in contactClicked.messages" :key="index" class="sent-mes" v-if="message && message.status === 'sent'">
+                                {{ message.message }}
                             </div>
                         </div>
+                        
                         <div class="insert-message">
                             <i class="fa-regular fa-face-smile"></i>
                             <input v-model="writeMessage" type="text" id="write-Message" name="writeMessage" placeholder="Scrivi un messaggio">
