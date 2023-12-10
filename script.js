@@ -189,9 +189,9 @@ const app = createApp({
             );
         },
         // sceglie randomicamente un contatto 
-        randomContactOpening() {
-            return this.contact[Math.floor(Math.random() * this.contacts.length)];
-        }
+        // randomContactOpening() {
+        //     return this.contacts[Math.floor(Math.random() * this.contacts.length)];
+        // },
     },
     methods: {
         contactChat(index) {
@@ -218,9 +218,9 @@ const app = createApp({
             }
         },
         // apri automaticamente la prima chat quando si carica la pagina
-        openChat() {
-            this.contactClicked = this.randomContactOpening;
-        },
+        // openChat() {
+        //     this.contactClicked = this.randomContactOpening(); // Chiamare la funzione invece di assegnarla
+        // },
     }
 }).mount('#app');
 
