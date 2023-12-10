@@ -209,8 +209,8 @@ const app = createApp({
                         message: 'ok',
                         status: 'received'
                     };
-                    
-                })
+                    this.contactClicked.messages.push(autoMessage);
+                }, 1000);
             };
 
         }
