@@ -203,6 +203,14 @@ const app = createApp({
                 this.contactClicked.messages.push(newMessage);
                 // reset del messaggio
                 this.writeMessage = '';
+                // risposta automatica dopo 1 sec con setTimeout
+                setTimeout(() => {
+                    const autoMessage = {
+                        message: 'ok',
+                        status: 'received'
+                    };
+                    
+                })
             };
 
         }
