@@ -201,7 +201,10 @@ const app = createApp({
                 }
                 // aggiungi il messaggio alla chat
                 this.contactClicked.messages.push(newMessage);
+                // reset del messaggio
+                this.writeMessage = '';
             };
+
         }
     }
 }).mount('#app');
