@@ -105,6 +105,8 @@ main{
     text-align: center;
     color: rgb(218, 218, 218);
     border-radius: 5px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 .searchbar input{
     height: 30px;
@@ -115,6 +117,8 @@ main{
     background-color: #ffffff;
     font-size: .7rem;
     color: rgb(218, 218, 218);
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
 }
 #contacts-list{
     min-height: 36rem;
@@ -201,18 +205,26 @@ main{
     padding: 5px;
 }
 .received-mes{
-    height: 100%;
-    width: 80%;
+    height: auto;
+    width: auto;
+    padding: 3px;
     margin-bottom: 7px;
-    background-color: blue;
+    border-radius: 8px;
+    background-color:white;
+    font-size: .8rem;
+    display: flex;
+    align-self: start;
 }
 .sent-mes{
-    height: 100%;
-    width: 80%;
+    height: auto;
+    width: auto;
+    padding: 3px;
     margin-bottom: 7px;
+    border-radius: 8px;
+    background-color: rgb(220, 247, 192);
+    font-size: .8rem;
     display: flex;
     align-self: end;
-    background-color: limegreen;
 }
 
 
