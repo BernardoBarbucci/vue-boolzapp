@@ -199,10 +199,10 @@ const app = createApp({
                     message: this.writeMessage,
                     status: 'sent'
                 }
+                // aggiungi il messaggio alla chat
+                this.contactClicked.messages.push(newMessage);
             };
-            
         }
-
     }
 }).mount('#app');
 
