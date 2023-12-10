@@ -195,8 +195,12 @@ const app = createApp({
         },
         sendMessage() {
             if (this.writeMessage.trim() !== '' && this.contactClicked) {
-                
-            }
+                const newMessage = { 
+                    message: this.writeMessage,
+                    status: 'sent'
+                }
+            };
+            
         }
 
     }
