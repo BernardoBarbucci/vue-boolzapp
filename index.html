@@ -80,7 +80,7 @@
                         
                         <div class="insert-message">
                             <i class="fa-regular fa-face-smile"></i>
-                            <input v-model="writeMessage" type="text" id="write-Message" name="writeMessage" placeholder="Scrivi un messaggio">
+                            <input v-model="writeMessage" type="text" id="write-Message" name="writeMessage" @keyup.enter="sendMessage" placeholder="Scrivi un messaggio">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
                     </div>
