@@ -192,7 +192,11 @@ const app = createApp({
     methods: {
         contactChat(index) {
             this.contactClicked = this.filteredContacts[index];
+        },
+        sendMessage() {
+            
         }
+
     }
 }).mount('#app');
 
