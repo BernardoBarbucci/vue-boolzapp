@@ -187,6 +187,10 @@ const app = createApp({
             return this.contacts.filter(contact => 
                 contact.name.toLowerCase().includes(this.searchName.toLowerCase())
             );
+        },
+        // sceglie randomicamente un contatto 
+        randomContactOpening() {
+            return this.contact[Math.floor(Math.random() * this.contacts.length)];
         }
     },
     methods: {
@@ -211,9 +215,12 @@ const app = createApp({
                     };
                     this.contactClicked.messages.push(autoMessage);
                 }, 1000);
-            };
-
-        }
+            }
+        },
+        // apri automaticamente la prima chat quando si carica la pagina
+        openChat() {
+            this.contactClicked = this.randomContactOpening;
+        },
     }
 }).mount('#app');
 
