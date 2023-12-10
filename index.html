@@ -71,10 +71,9 @@
                     </div>
                     <div id="chat">
                         <div class="chat-container">
-                            <div v-for="(message, index) in contactClicked.messages" :key="index" class="received-mes" v-if="message && message.status === 'received'">
-                                {{ message.message }}
-                            </div>
-                            <div v-for="(message, index) in contactClicked.messages" :key="index" class="sent-mes" v-if="message && message.status === 'sent'">
+                            <!-- assegna la classe in base allo status -> if received, stampa ;else stampa sent -->
+                            <div v-for="(message, index) in contactClicked?.messages" :key="index"
+                                :class="[message.status === 'received' ? 'received-mes' : 'sent-mes']">
                                 {{ message.message }}
                             </div>
                         </div>
