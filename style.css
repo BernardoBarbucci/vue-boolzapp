@@ -175,6 +175,10 @@ main{
     width: 100%;
     min-height: 39rem;
     background-image: url(./img/mine.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 18px;
 }
 .insert-message{
     height: 3rem;
@@ -197,13 +201,17 @@ main{
     padding: 5px;
 }
 .received-mes{
-    height: 30px;
-    width: 5rem;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 7px;
     background-color: blue;
 }
 .sent-mes{
-    height: 30px;
-    width: 5rem;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 7px;
+    display: flex;
+    align-self: end;
     background-color: limegreen;
 }
 
