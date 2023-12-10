@@ -194,7 +194,9 @@ const app = createApp({
             this.contactClicked = this.filteredContacts[index];
         },
         sendMessage() {
-            if (this.writeMessage.trim() !== '')
+            if (this.writeMessage.trim() !== '' && this.contactClicked) {
+                
+            }
         }
 
     }
